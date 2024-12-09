@@ -1,0 +1,33 @@
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 40px;
+}
+
+nav ul#menu {
+    display: flex;
+    gap: 40px;
+}
+
+li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+nav input#input-search {
+    width: 200px;
+    height: 36px;
+    background-color: #331436;
+    background-image: url('../assets/ic-search.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    color: rgb(255, 255, 255, 50%);
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255, 10%);
+    
+}
