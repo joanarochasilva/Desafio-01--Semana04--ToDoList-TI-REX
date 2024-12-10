@@ -57,9 +57,13 @@ footer {
 }
 
 footer div#social-network-box img {
-    border: 1px solid #fff;
 }
 
+footer nav {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 12px;
+    }
 
 footer ul {
     display: flex;
