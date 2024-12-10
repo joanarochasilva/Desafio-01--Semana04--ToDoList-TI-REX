@@ -15,7 +15,9 @@ nav button:hover {
 
 /*------------------------------------------- MAIN --------------------------------------------------------*/
 
-section#main-presentation {
+/*------------------------------------------- FIRST SECTION --------------------------------------------------------*/
+
+section#first-section {
     background-color: #7A1745;
     display: flex;
     justify-content: center;
@@ -26,32 +28,32 @@ section#main-presentation {
     
 }
 
-section#main-presentation div#information h2 {
+section#first-section div#information h2 {
     color: #fff;
 }
 
-section#main-presentation div#information h2 span {
+section#first-section div#information h2 span {
     color: #FCF4B6;
 }
 
-section#main-presentation div#information p {
+section#first-section div#information p {
     color: #fff;
     width: 520px;
     text-align: center;
 }
 
-section#main-presentation div#information button {
+section#first-section div#information button {
     background-color: #CB4F57;
     color: #FCF4B6;
 
 }
 
-section#main-presentation div#information button:hover{
+section#first-section div#information button:hover{
     background-color: #d65059;
 }
 
 
-section#main-presentation div#information {
+section#first-section div#information {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -59,10 +61,13 @@ section#main-presentation div#information {
     align-items: center;
 }
 
-section#main-presentation div#image {
+section#first-section div#image {
     max-width: 540px;
 }
 
-section#main-presentation div#image {
+section#first-section div#image {
     display: block;
 }
+
+/*------------------------------------------- SECOND SECTION --------------------------------------------------------*/
+
