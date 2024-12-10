@@ -16,7 +16,11 @@ body {
 h2 {
     font-weight: bold;
     font-size: 40px;
-    line-height: 48px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 a {
@@ -26,7 +30,8 @@ a {
 
 p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+
 }
 
 ul {
@@ -38,6 +43,9 @@ button {
     border-radius: 8px;
     width: 240px;
     height: 48px;
+    background-color: #331436;
+    color: #fff;
+    font-weight: 500;
 }
 
 button a {

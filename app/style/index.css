@@ -71,3 +71,40 @@ section#first-section div#image {
 
 /*------------------------------------------- SECOND SECTION --------------------------------------------------------*/
 
+section#second-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    padding: 60px;
+    gap: 60px;
+}
+
+article#manager-info {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+article#manager-info p{
+    font-weight: normal;
+    color: #020000;
+}
+
+article#image-board {
+    display: flex;
+    gap: 40px;
+}
+
+article#image-board div.manager-images div.manager-images-info {
+    margin-top: 12px;
+}
+
+article#image-board div.manager-images img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
