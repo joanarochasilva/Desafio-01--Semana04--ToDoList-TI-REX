@@ -2,20 +2,67 @@
 /*------------------------------------------- CONFIGURAÇÕES HEADER DA PÁGINA INDEX--------------------------------------------------------*/
 
 nav button {
-
     background-color: #CB4F57;
-    border: none;
-    border-radius: 8px;
-    width: 240px;
-    height: 48px;
+    color: #FCF4B6;
+
 }
 
-nav button a {
-    color: #FCF4B6;
-    font-size: 16px;
-}
 
 
 nav button:hover {
     background-color: #d65059;
+}
+
+/*------------------------------------------- MAIN --------------------------------------------------------*/
+
+section#main-presentation {
+    background-color: #7A1745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-height: 496px;
+    padding: 1.875em 0;
+    
+}
+
+section#main-presentation div#information h2 {
+    color: #fff;
+}
+
+section#main-presentation div#information h2 span {
+    color: #FCF4B6;
+}
+
+section#main-presentation div#information p {
+    color: #fff;
+    width: 520px;
+    text-align: center;
+}
+
+section#main-presentation div#information button {
+    background-color: #CB4F57;
+    color: #FCF4B6;
+
+}
+
+section#main-presentation div#information button:hover{
+    background-color: #d65059;
+}
+
+
+section#main-presentation div#information {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+section#main-presentation div#image {
+    max-width: 540px;
+}
+
+section#main-presentation div#image {
+    display: block;
 }
