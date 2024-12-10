@@ -15,11 +15,11 @@ body {
 
 h2 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 500;
 }
 
@@ -29,7 +29,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.5;
 
 }
@@ -40,7 +40,7 @@ ul {
 
 button {
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5em;
     width: 240px;
     height: 48px;
     background-color: #331436;
@@ -50,7 +50,7 @@ button {
 
 button a {
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 /*-------------------------------------------- CONFIGURAÇÕES PADRÃO DO HEADER -----------------------------------------------------------*/
@@ -68,43 +68,47 @@ header {
 header div#logo-box {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 header div#logo-box p#logo-name {
     color: #fff;
-    font-size: 28px;
+    font-size: 1.25em;
 }
 
 /*-------------------------------------------- CONFIGURAÇÕES PADRÃO DO FOOTER -----------------------------------------------------------*/
 
 footer {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25em;
     background-color: #331436;
     display: flex;
-    gap: 60px;
+    gap: 3.75em;
     justify-content: center;
     align-items: center;
-    padding: 60px 0;
+    padding: 3.75em 0;
 
 }
 
 
 footer nav {
     display: flex;
-    gap: 60px;
-    margin-bottom: 12px;
+    gap: 3.75em;
 }
 
-footer nav  p {
-    font-size: 20px;
+footer p {
+    font-size: 1.25em;
 
 }
+
+footer img {
+    margin-top: 0.75em;
+}
+
 
 footer ul {
     display: flex;
-    gap: 60px;
+    gap: 3.75em;
 }
 
 

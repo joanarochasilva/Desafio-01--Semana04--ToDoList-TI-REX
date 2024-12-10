@@ -21,16 +21,22 @@ section#first-section {
     background-color: #7A1745;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 60px;
-    max-height: 496px;
     padding: 1.875em 0;
-    
+    max-height: 31em;
+}
+
+section#first-section div#container {
+    max-width: 68.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
 }
 
 section#first-section div#information h2 {
     color: #fff;
-}
+    text-wrap: nowrap;
+    }
 
 section#first-section div#information h2 span {
     color: #FCF4B6;
@@ -38,7 +44,7 @@ section#first-section div#information h2 span {
 
 section#first-section div#information p {
     color: #fff;
-    width: 520px;
+    max-width: 32em;
     text-align: center;
 }
 
@@ -56,18 +62,12 @@ section#first-section div#information button:hover{
 section#first-section div#information {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5em;
     justify-content: center;
     align-items: center;
 }
 
-section#first-section div#image {
-    max-width: 540px;
-}
 
-section#first-section div#image {
-    display: block;
-}
 
 /*------------------------------------------- SECOND SECTION --------------------------------------------------------*/
 
@@ -79,15 +79,15 @@ section#second-section {
     align-items: center;
 
     background-color: #fff;
-    padding: 60px;
-    gap: 60px;
+    padding: 3.75em;
+    gap: 3.75em;
 }
 
 article#manager-info {
-    width: 1100px;
+    width: 68.75em;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5em;
 }
 
 article#manager-info p{
@@ -97,14 +97,14 @@ article#manager-info p{
 
 article#image-board {
     display: flex;
-    gap: 40px;
+    gap: 2.5em;
 }
 
 article#image-board div.manager-images div.manager-images-info {
-    margin-top: 12px;
+    margin-top: 0.75em;
 }
 
 article#image-board div.manager-images img {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 0.375em;
+    border-top-right-radius: 0.375em;
 }
