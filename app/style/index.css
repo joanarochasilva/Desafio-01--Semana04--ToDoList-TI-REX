@@ -11,6 +11,14 @@ section.main-section{
     gap: 3.75em;
 }
 
+div.section-container {
+    width: 68.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+
 /*------------------------------------------- CONFIGURAÇÕES HEADER DA PÁGINA INDEX--------------------------------------------------------*/
 
 nav button {
@@ -35,13 +43,7 @@ section#first-section {
     justify-content: center;
 }
 
-section#first-section div#first-section-container {
-    max-width: 68.75em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5em;
-}
+
 
 section#first-section div#information h2 {
     color: #fff;
@@ -131,8 +133,7 @@ article#feature-tools-more {
 
 article#feature-tools-examples {
     display: flex;
-    justify-content: space-around;
-    gap: 2.5em;
+    justify-content: space-between;
     width: 68.75em;
 }
 
@@ -161,15 +162,18 @@ article#feature-tools-examples div.feature-tools-card img {
 
 section#fourth-section {
     background-color: #fff;
-    flex-direction: row;
-    height: 388px;
+}
 
+section#fourth-section div.section-container {
+    
+    justify-content: space-between;
 }
 
 section#fourth-section article#subscribe-info {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    
 }
 
 section#fourth-section article#subscribe-form section#form-enter-email p {
