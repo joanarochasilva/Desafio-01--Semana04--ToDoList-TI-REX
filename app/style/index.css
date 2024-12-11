@@ -1,9 +1,9 @@
 
 
 
-/*------------------------------------------- CONFIGURAÇÕES HEADER DA PÁGINA INDEX--------------------------------------------------------*/
+/*------------------------------------------- CONFIGURAÇÕES GLOBAIS DA PÁGINA INDEX--------------------------------------------------------*/
 
-nav button {
+.to-login-button {
     background-color: #CB4F57;
     color: #FCF4B6;
 
@@ -11,11 +11,19 @@ nav button {
 
 
 
-nav button:hover {
+.to-login-button:hover {
     background-color: #d65059;
+    
+}
+
+/*------------------------------------------- CONFIGURAÇÕES FOOTER DA PÁGINA INDEX--------------------------------------------------------*/
+
+footer {
+    position: relative;
 }
 
 /*------------------------------------------- MAIN --------------------------------------------------------*/
+
 
 /*------------------------------------------- FIRST SECTION --------------------------------------------------------*/
 
@@ -42,14 +50,8 @@ section#first-section div#information p {
     text-align: center;
 }
 
-section#first-section div#information button {
-    background-color: #CB4F57;
-    color: #FCF4B6;
-
-}
-
-section#first-section div#information button:hover{
-    background-color: #d65059;
+div.section-container div#image img {
+    max-width: 33.75em;
 }
 
 

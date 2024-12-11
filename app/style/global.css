@@ -134,14 +134,30 @@ header div#logo-box img#logo-image {
 
 footer {
     color: #fff;
-    font-size: 1.25em;
     background-color: #331436;
     display: flex;
     gap: 3.75em;
     justify-content: center;
     align-items: center;
     padding: 3.75em 0;
+    width: 100vw;
 
+    position: fixed;
+    bottom: 0;
+}
+
+footer div#social-network-box {
+    display: flex;
+    gap: 18px;
+}
+
+footer div#social-network-box a {
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
 }
 
 
@@ -151,7 +167,6 @@ footer nav {
 }
 
 footer p {
-    font-size: 1.25em;
     color: #fff;
 
 }
