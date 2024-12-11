@@ -1,23 +1,5 @@
 
 
-section.main-section{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 3.75em;
-    gap: 3.75em;
-}
-
-div.section-container {
-    width: 68.75em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5em;
-}
 
 /*------------------------------------------- CONFIGURAÇÕES HEADER DA PÁGINA INDEX--------------------------------------------------------*/
 
@@ -176,11 +158,10 @@ section#fourth-section article#subscribe-info {
     display: flex;
     flex-direction: column;
     width: 520px;
+    gap: 24px;
 }
 
-section#fourth-section article#subscribe-form {
-    
-}
+
 
 section#fourth-section article#subscribe-form section#form-enter-email p {
     font-size: 12px;
