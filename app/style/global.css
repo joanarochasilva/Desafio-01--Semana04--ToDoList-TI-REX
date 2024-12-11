@@ -54,7 +54,31 @@ button {
 
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
 
+form section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label {
+    color: #331436;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+input {
+    width: 32.5em;
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    border: 1px solid rgb(0, 0, 0, 10%);
+}
 
 
 /*-------------------------------------------- CONFIGURAÇÕES PADRÃO DO HEADER -----------------------------------------------------------*/
