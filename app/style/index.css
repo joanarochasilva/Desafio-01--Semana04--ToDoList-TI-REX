@@ -120,6 +120,7 @@ section#third-section{
     
 }
 
+
 article#feature-tools-more {
     width: 68.75em;
     text-align: center;
@@ -165,18 +166,24 @@ section#fourth-section {
 }
 
 section#fourth-section div.section-container {
-    
     justify-content: space-between;
+    padding: 60px 0;
 }
+
+
 
 section#fourth-section article#subscribe-info {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    width: 520px;
+}
+
+section#fourth-section article#subscribe-form {
     
 }
 
 section#fourth-section article#subscribe-form section#form-enter-email p {
     font-size: 12px;
+
     color: rgb(0, 0, 0, 50%);
 }

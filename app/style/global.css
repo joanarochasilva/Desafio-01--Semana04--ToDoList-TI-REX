@@ -73,7 +73,8 @@ label {
 }
 
 input {
-    width: 32.5em;
+    width: 520px;
+    height: 36px;
     padding: 8px 12px;
     border-radius: 6px;
 
