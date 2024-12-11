@@ -82,24 +82,8 @@ input {
     border: 1px solid rgb(0, 0, 0, 10%);
 }
 
-.section-container {
-    width: 68.75em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5em;
-}
-
-
-section.main-section{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 3.75em;
-    gap: 3.75em;
+.general-hover:hover {
+    background-color: #3f1e41;
 }
 
 /*-------------------------------------------- CONFIGURAÇÕES PADRÃO DO HEADER -----------------------------------------------------------*/

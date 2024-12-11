@@ -1,6 +1,5 @@
 
 
-
 /*------------------------------------------- CONFIGURAÇÕES GLOBAIS DA PÁGINA INDEX--------------------------------------------------------*/
 
 .to-login-button {
@@ -14,6 +13,29 @@
 .to-login-button:hover {
     background-color: #d65059;
     
+}
+
+
+
+.section-container {
+    width: 68.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+
+
+section.main-section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.75em;
+    gap: 3.75em;
+
 }
 
 /*------------------------------------------- CONFIGURAÇÕES FOOTER DA PÁGINA INDEX--------------------------------------------------------*/
