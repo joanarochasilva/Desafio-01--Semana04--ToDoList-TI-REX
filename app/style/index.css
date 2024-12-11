@@ -1,4 +1,16 @@
 
+
+section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.75em;
+    gap: 3.75em;
+}
+
 /*------------------------------------------- CONFIGURAÇÕES HEADER DA PÁGINA INDEX--------------------------------------------------------*/
 
 nav button {
@@ -21,11 +33,9 @@ section#first-section {
     background-color: #7A1745;
     display: flex;
     justify-content: center;
-    padding: 1.875em 0;
-    max-height: 31em;
 }
 
-section#first-section div#container {
+section#first-section div#first-section-container {
     max-width: 68.75em;
     display: flex;
     justify-content: center;
@@ -72,15 +82,7 @@ section#first-section div#information {
 /*------------------------------------------- SECOND SECTION --------------------------------------------------------*/
 
 section#second-section {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     background-color: #fff;
-    padding: 3.75em;
-    gap: 3.75em;
 }
 
 article#manager-info {
@@ -108,3 +110,50 @@ article#image-board div.manager-images img {
     border-top-left-radius: 0.375em;
     border-top-right-radius: 0.375em;
 }
+
+/*------------------------------------------- THIRD SECTION --------------------------------------------------------*/
+
+section#third-section{
+    background-color: rgba(252, 244, 182, 0.5);
+    
+}
+
+article#feature-tools-more {
+    width: 68.75em;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+
+article#feature-tools-examples {
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5em;
+    width: 68.75em;
+}
+
+div.feature-tools-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25em;
+
+}
+
+div.feature-tools-card-info {
+    max-width: 15.32em;
+}
+
+div.feature-tools-card div.feature-tools-card-info p:nth-child(odd) {
+    font-size: 1.25em;
+}
+
+article#feature-tools-examples div.feature-tools-card img {
+    max-width: 6.25em;
+}
+

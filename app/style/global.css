@@ -16,6 +16,8 @@ body {
 h2 {
     font-weight: bold;
     font-size: 2.5em;
+    color: #331436;
+
 }
 
 h3 {
@@ -31,6 +33,8 @@ a {
 p {
     font-size: 1em;
     line-height: 1.5;
+    color: #331436;
+
 
 }
 
@@ -46,12 +50,12 @@ button {
     background-color: #331436;
     color: #fff;
     font-weight: 500;
+    font-size: 1em;
+
 }
 
-button a {
-    color: #fff;
-    font-size: 1em;
-}
+
+
 
 /*-------------------------------------------- CONFIGURAÇÕES PADRÃO DO HEADER -----------------------------------------------------------*/
 
@@ -73,7 +77,12 @@ header div#logo-box {
 
 header div#logo-box p#logo-name {
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.75em;
+}
+
+header div#logo-box img#logo-image {
+    width: 50px;
+    height: 50px;
 }
 
 /*-------------------------------------------- CONFIGURAÇÕES PADRÃO DO FOOTER -----------------------------------------------------------*/
@@ -98,6 +107,7 @@ footer nav {
 
 footer p {
     font-size: 1.25em;
+    color: #fff;
 
 }
 
