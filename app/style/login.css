@@ -1,9 +1,11 @@
 
 
+
 main {
-    height: 73.2vh;
     display: flex;
     justify-content: center;
+    flex: 1;
+    
 }
 
 section#login {
@@ -21,6 +23,7 @@ section#login article#login-info {
     width: 520px;
     gap: 24px;
 }
+
 
 
 

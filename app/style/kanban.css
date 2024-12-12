@@ -34,20 +34,18 @@ nav input#input-search {
     
 }
 
-footer {
-    position: relative;
-}
+
 
 /*-------------------------------------------- CONFIGURAÇÕES SECTIONS -----------------------------------------------------------*/
 
 main {
     background-color: rgba(0, 0, 0, 0.1);
-    height: 100vh;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    
+    padding: 60px;
 }
 
 section.kanban-board {
@@ -68,8 +66,7 @@ section.kanban-board section.task{
     flex-direction: column;
     border: 1px solid #331436;
     border-radius: 8px;
-    justify-content: space-around;
-    height: 127px;
+    gap: 10px;
 }
 
 section.kanban-board h3{

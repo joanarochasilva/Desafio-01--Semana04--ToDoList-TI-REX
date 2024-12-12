@@ -20,8 +20,6 @@
 .section-container {
     width: 68.75em;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2.5em;
 }
 
@@ -29,20 +27,13 @@
 section.main-section{
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     padding: 3.75em;
-    gap: 3.75em;
 
 }
 
-/*------------------------------------------- CONFIGURAÇÕES FOOTER DA PÁGINA INDEX--------------------------------------------------------*/
 
-footer {
-    position: relative;
-}
 
 /*------------------------------------------- MAIN --------------------------------------------------------*/
 
@@ -51,16 +42,14 @@ footer {
 
 section#first-section {
     background-color: #7A1745;
-    display: flex;
-    justify-content: center;
+    
 }
 
 
 
 section#first-section div#information h2 {
     color: #fff;
-    text-wrap: nowrap;
-    }
+}
 
 section#first-section div#information h2 span {
     color: #FCF4B6;
@@ -72,9 +61,6 @@ section#first-section div#information p {
     text-align: center;
 }
 
-div.section-container div#image img {
-    max-width: 33.75em;
-}
 
 
 section#first-section div#information {
@@ -85,12 +71,17 @@ section#first-section div#information {
     align-items: center;
 }
 
-
-
+div.image img {
+    max-width: 100%;
+}
 /*------------------------------------------- SECOND SECTION --------------------------------------------------------*/
 
 section#second-section {
     background-color: #fff;
+}
+
+section#second-section section.section-container {
+    flex-direction: column;
 }
 
 article#manager-info {
@@ -126,6 +117,10 @@ section#third-section{
     
 }
 
+section#third-section section.section-container {
+    flex-direction: column;
+    gap: 60px;
+}
 
 article#feature-tools-more {
     width: 68.75em;
@@ -173,6 +168,7 @@ section#fourth-section {
 
 section#fourth-section div.section-container {
     justify-content: space-between;
+    align-items: center;
     padding: 60px 0;
 }
 
@@ -181,7 +177,7 @@ section#fourth-section div.section-container {
 section#fourth-section article#subscribe-info {
     display: flex;
     flex-direction: column;
-    width: 520px;
+
     gap: 24px;
 }
 
