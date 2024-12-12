@@ -1,4 +1,6 @@
 
+/*-------------------------------------------- CONFIGURAÇÕES HEADER -----------------------------------------------------------*/
+
 
 nav {
     display: flex;
@@ -31,3 +33,131 @@ nav input#input-search {
     border: 1px solid rgb(255, 255, 255, 10%);
     
 }
+
+footer {
+    position: relative;
+}
+
+/*-------------------------------------------- CONFIGURAÇÕES SECTIONS -----------------------------------------------------------*/
+
+main {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+
+section.kanban-board {
+    display: flex;
+    flex-direction: column;
+    height: 626px;
+    width: 240px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+section.kanban-board section.task{
+    background-color: #F8F2FF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #331436;
+    border-radius: 8px;
+    justify-content: space-around;
+    height: 127px;
+}
+
+section.kanban-board h3{
+    font-size: 24px;
+    color: #331436;
+}
+
+section.kanban-board section.task div.task-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+section.kanban-board section.task div.task-header h5.high-priority {
+    color: #7A1745;
+    background-color: #CB4F57;
+    border: solid 1px #7A1745;
+}
+
+section.kanban-board section.task div.task-header h5.medium-priority {
+    color: #CB4F57;
+    background-color: #EB9961;
+    border: solid 1px #CB4F57;
+}
+
+section.kanban-board section.task div.task-header h5.low-priority {
+    color: #EB9961;
+    background-color: #FCF4B6;
+    border: solid 1px #EB9961;
+}
+
+section.kanban-board section.task div.task-header p {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(0, 0, 0, 50%);
+}
+
+section.kanban-board section.task div.task-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 5px;
+}
+
+section.kanban-board section.task div.task-options div.task-group-components {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+section.kanban-board section.task div.task-options div.task-group-components div.pearson {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.pearson p {
+    color: #fff;
+}
+
+#pearson-1 {
+    background-color: #801E8F;
+
+}
+
+
+#pearson-2 {
+    background-color: #2E4B83;
+
+}
+
+
+#pearson-3 {
+    background-color: #D92B93;
+
+}
+
+#pearson-4 {
+    background-color: #1A712D;
+}
+
+#pearson-5 {
+    background-color: #AF4A00;
+}
+
