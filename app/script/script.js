@@ -2,10 +2,9 @@
 const form = document.querySelector('form')
 
 form.addEventListener('submit', (e) => {
-    const button = form.lastElementChild
+    const button = form.lastElementChild.id
     
-    button.id === 'subscribe-button' ? console.log(button.id) : console.log('deu ruim')
-
+    button === 'subscribe-button' ? subscription() : console.log('deu ruim')
     e.preventDefault()
 })
 
@@ -14,18 +13,25 @@ function subscription() {
     
     const invalid = validationParameters()
 
-    if(invalid) {
-    validation(invalid)
-}
+    invalid ? validation(invalid) : toStorage()
 
-
-
+    
 
 }
+
+function toStorage() {
+    console.log(form.email.value)
+    console.log(form.name_field.value)
+    localStorage.setItem('email', form.email.value)
+    localStorage.setItem('name', form.name_field.value)
+}
+
 
 function validationParameters() {
 
     let errors = {}
+    let count = 0
+
     const emailValidation = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
     const formType = form.lastElementChild.id
 
@@ -33,9 +39,11 @@ function validationParameters() {
     if(form.email.value === '') {
         console.log('email vazio')
         errors.email = true
+        count++
     } else if(!emailValidation.test(form.email.value)) {
         console.log('formato inválido')
         errors.invalid = true
+        count++
     }
 
     
@@ -43,15 +51,16 @@ function validationParameters() {
     if(formType === 'subscribe-button' && form?.name_field.value === '') {
         console.log('nome vazio')
         errors.name_field = true
+        count++
     } else if(formType === 'login-button' && form.password.value === '') {
         console.log('sem senha')
         errors.password === true
-    } else  {
-        
-    }
+        count++
+    } 
 
 
-    return errors
+    if(count > 0) return errors
+    else return false
 }
 
 
@@ -87,27 +96,23 @@ function validation(invalid) {
             message = 'Por favor, digite um endereço de e-mail.'
         }
     
+        if(section.childElementCount < 1) {
+            const errorField = document.createElement('p')
+            const errorFieldContent = document.createTextNode(message)
+            const errorIcon = document.createElement('img')
+            errorIcon.src = '../assets/attention.svg'
+            errorField.appendChild(errorFieldContent)
+            errorIcon.classList.add('errorIcon')
+            errorField.style.color = 'rgba(255, 0, 0, 0.61)'
+            errorField.style.fontSize = '14px'
     
-        const errorField = document.createElement('p')
-        const errorFieldContent = document.createTextNode(message)
-        const errorIcon = document.createElement('img')
-        errorIcon.src = '../assets/attention.svg'
-        errorField.appendChild(errorFieldContent)
-        errorIcon.classList.add('errorIcon')
-        errorField.style.color = 'rgba(255, 0, 0, 0.61)'
-        errorField.style.fontSize = '14px'
-        section.appendChild(errorIcon)
-        section.appendChild(errorField)
-    
-        field.classList.add(`error`)
+            section.appendChild(errorIcon)
+            section.appendChild(errorField)
+        
+            field.classList.add(`error`)
+        }
         
     })
 }
 
-const invalid = validationParameters()
-
-if(invalid) {
-validation(invalid)
-
-}
 

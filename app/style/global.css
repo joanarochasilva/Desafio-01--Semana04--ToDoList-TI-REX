@@ -177,6 +177,7 @@ footer ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    height: 21px;
 }
 .error {
     border: 1px solid #ff00009c;
