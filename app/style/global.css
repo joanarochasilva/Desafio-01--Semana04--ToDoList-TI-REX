@@ -171,5 +171,20 @@ footer ul {
     gap: 3.75em;
 }
 
+/*-------------------------------------------- ERRO -----------------------------------------------------------*/
 
+.error-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.error {
+    border: 1px solid #ff00009c;
+}
+
+.errorIcon {
+    width: 15px;
+    
+    
+}
 
