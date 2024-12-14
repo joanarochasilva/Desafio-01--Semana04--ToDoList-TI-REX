@@ -133,7 +133,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 3.75em 0;
-
 }
 
 footer div#social-network-box {
@@ -151,18 +150,19 @@ footer div#social-network-box a {
 }
 
 
-footer nav {
-    display: flex;
-    gap: 3.75em;
+
+
+footer li a {
+    font-size: 20px;
 }
 
 footer p {
     color: #fff;
-
+    font-size: 20px;
 }
 
 footer img {
-    margin-top: 0.75em;
+    margin-top: 0.6em;
 }
 
 

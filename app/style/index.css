@@ -2,7 +2,11 @@
 
 /*------------------------------------------- CONFIGURAÇÕES GLOBAIS DA PÁGINA INDEX--------------------------------------------------------*/
 
-main { flex: 1;}
+main { 
+    flex: 1;
+}
+
+
 
 .to-login-button {
     background-color: #CB4F57;

@@ -2,12 +2,33 @@
 const form = document.querySelector('form')
 
 form.addEventListener('submit', (e) => {
+
     const button = form.lastElementChild.id
+    document.querySelectorAll('section.error-section').forEach(child => child.innerHTML = '')
+
+
+    if(button === 'subscribe-button') {
+        form.email.classList.remove('error')
+        form.name_field.classList.remove('error')
+    }
+    else {
+        form.email.classList.remove('error')
+        form.password.classList.remove('error')
+    }
+
+    if(button === 'subscribe-button') subscription()
+    else login()
     
-    button === 'subscribe-button' ? subscription() : console.log('deu ruim')
     e.preventDefault()
 })
 
+function login() {
+
+    const invalid = validationParameters()
+
+    invalid ? validation(invalid) : window.location.replace('kanban.html')
+
+}
 
 function subscription() {
     
@@ -15,15 +36,13 @@ function subscription() {
 
     invalid ? validation(invalid) : toStorage()
 
-    
-
 }
 
 function toStorage() {
     console.log(form.email.value)
     console.log(form.name_field.value)
     localStorage.setItem('email', form.email.value)
-    localStorage.setItem('name', form.name_field.value)
+    localStorage.setItem('name', [form.name_field.value])
 }
 
 
@@ -34,6 +53,7 @@ function validationParameters() {
 
     const emailValidation = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
     const formType = form.lastElementChild.id
+    console.log(formType)
 
 
     if(form.email.value === '') {
@@ -52,13 +72,13 @@ function validationParameters() {
         console.log('nome vazio')
         errors.name_field = true
         count++
-    } else if(formType === 'login-button' && form.password.value === '') {
+    } else if(formType === 'login-button' && form?.password.value === '') {
         console.log('sem senha')
-        errors.password === true
+        errors.password = true
         count++
     } 
 
-
+    console.log(errors)
     if(count > 0) return errors
     else return false
 }
