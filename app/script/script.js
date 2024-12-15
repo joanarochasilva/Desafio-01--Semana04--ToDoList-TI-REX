@@ -1,6 +1,11 @@
 
 const form = document.querySelector('form')
 
+form.addEventListener('focus', (e) => {
+    document.querySelector('div.success-notification-container').style.display = 'none'
+
+}, true)
+
 form.addEventListener('submit', (e) => {
 
     const button = form.lastElementChild.id
@@ -34,7 +39,12 @@ function subscription() {
     
     const invalid = validationParameters()
 
-    invalid ? validation(invalid) : toStorage()
+    if(invalid) validation(invalid)
+    else {
+        toStorage()
+        document.querySelector('div.success-notification-container').style.display = 'flex'
+    }
+
 
 }
 

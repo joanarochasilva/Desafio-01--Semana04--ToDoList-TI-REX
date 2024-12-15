@@ -171,6 +171,8 @@ article#feature-tools-examples div.feature-tools-card img {
 
 section#fourth-section {
     background-color: #fff;
+    padding: 2.44em 1.25em;
+    padding-top: 3.75em;
 }
 
 section#fourth-section div.section-container {
@@ -196,5 +198,31 @@ section#fourth-section article#subscribe-form section#form-enter-email p {
     font-size: 12px;
 
     color: rgb(0, 0, 0, 50%);
+}
+
+
+
+section.notification {
+    margin-top: 10px;
+    height: 21px;
+}
+
+
+
+.success-notification-container {
+    display: none;
+    align-items: center;
+    gap: 4px;
+    height: 21px;
+}
+
+
+
+.success-notification-container p {
+    font-size: 14px;
+}
+
+.success-notification-container img {
+    width: 25px;
 }
 
