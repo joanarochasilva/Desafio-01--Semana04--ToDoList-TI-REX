@@ -125,11 +125,11 @@ section#third-section{
 
 section#third-section section.section-container {
     flex-direction: column;
-    gap: 60px;
+    gap: 60px;    
 }
 
 article#feature-tools-more {
-    max-width: 68.75em;
+    width: 100%;
     text-align: center;
 
     display: flex;
@@ -142,7 +142,8 @@ article#feature-tools-more {
 article#feature-tools-examples {
     display: flex;
     justify-content: space-between;
-    max-width: 68.75em;
+    width: 100%;
+    padding: 12px 0;
 }
 
 div.feature-tools-card {
@@ -151,7 +152,7 @@ div.feature-tools-card {
     align-items: center;
     text-align: center;
     gap: 1.25em;
-
+    width: 50%;
 }
 
 div.feature-tools-card-info {
@@ -163,7 +164,7 @@ div.feature-tools-card div.feature-tools-card-info p:nth-child(odd) {
 }
 
 article#feature-tools-examples div.feature-tools-card img {
-    max-width: 6.25em;
+
 }
 
 /*------------------------------------------- FOURTH SECTION --------------------------------------------------------*/

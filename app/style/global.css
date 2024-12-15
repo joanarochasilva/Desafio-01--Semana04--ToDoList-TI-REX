@@ -130,7 +130,7 @@ footer {
     gap: 3.75em;
     justify-content: center;
     align-items: center;
-    padding: 3.75em 0;
+    padding: 3.75em 1.25em;
 }
 
 footer div#social-network-box {
