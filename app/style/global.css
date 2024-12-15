@@ -176,7 +176,7 @@ footer ul {
     flex-direction: row;
     gap: 10px;
     height: 21px;
-    width: 311px;
+    width: 300px;
 }
 .error {
     border: 1px solid #ff00009c;

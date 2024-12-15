@@ -1,6 +1,13 @@
 
 /*-------------------------------------------- CONFIGURAÇÕES HEADER -----------------------------------------------------------*/
 
+button {
+    outline: none;
+    background-color: #ffffff00;
+    width: 14px;
+    height: 15px;
+    cursor: pointer;
+}
 
 nav {
     display: flex;

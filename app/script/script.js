@@ -42,7 +42,7 @@ function toStorage() {
     console.log(form.email.value)
     console.log(form.name_field.value)
     localStorage.setItem('email', form.email.value)
-    localStorage.setItem('name', [form.name_field.value])
+    localStorage.setItem('name', form.name_field.value)
 }
 
 
