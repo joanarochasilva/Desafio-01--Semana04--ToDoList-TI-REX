@@ -187,6 +187,9 @@ section#fourth-section article#subscribe-info {
     flex-direction: column;
 }
 
+div.button {
+    display: flex;
+}
 
 
 section#fourth-section article#subscribe-form section#form-enter-email p {
