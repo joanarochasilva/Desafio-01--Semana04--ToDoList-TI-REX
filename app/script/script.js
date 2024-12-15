@@ -124,8 +124,8 @@ function validation(invalid) {
             errorField.appendChild(errorFieldContent)
             errorIcon.classList.add('errorIcon')
             errorField.style.color = 'rgba(255, 0, 0, 0.61)'
-            errorField.style.fontSize = '14px'
-    
+            errorField.style.fontSize = '0.875em'
+            errorField.style.textWrap = 'wrap'
             section.appendChild(errorIcon)
             section.appendChild(errorField)
         
