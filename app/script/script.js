@@ -106,24 +106,24 @@ function validation(invalid) {
         if(key === 'name_field') {
             field = form.name_field
             section = document.querySelector(`form section#form-enter-name section.error-section`)
-            message = 'Por favor, digite o seu nome.'        
+            message = 'Please, enter your name.'        
         }
         else if(key === 'password') {
             field = form.password
             section = document.querySelector(`form section#form-enter-password section.error-section`)
-            message = 'Por favor, digite sua senha.'
+            message = 'Please, enter your password.'
         }
         
     
         if(key === 'invalid') {
             field = form.email
             section = document.querySelector(`form section#form-enter-email section.error-section`)
-            message = 'Por favor, digite um endereço de e-mail válido.'
+            message = 'Please, enter a valid e-mail address.'
     
         } else if(key === `email`) {
             field = form.email
             section = document.querySelector(`form section#form-enter-email section.error-section`)
-            message = 'Por favor, digite um endereço de e-mail.'
+            message = 'Por favor, enter an e-mail addres.'
         }
     
         if(section.childElementCount < 1) {
