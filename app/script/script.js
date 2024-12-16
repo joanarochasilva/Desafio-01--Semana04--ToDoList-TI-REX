@@ -123,7 +123,7 @@ function validation(invalid) {
         } else if(key === `email`) {
             field = form.email
             section = document.querySelector(`form section#form-enter-email section.error-section`)
-            message = 'Por favor, enter an e-mail addres.'
+            message = 'Please, enter an e-mail address.'
         }
     
         if(section.childElementCount < 1) {
